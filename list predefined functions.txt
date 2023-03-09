@@ -1,0 +1,15 @@
+ab=[0,-99,99,231,86]
+print(sorted(ab))
+
+ab.append(10)
+print(ab)
+
+print(ab.count(5))
+
+print(ab.count(99))
+
+ab.insert(3,100)
+print(ab)
+
+ab.remove(99)
+print(ab)

@@ -1,0 +1,28 @@
+num=[1,2,3,4]
+it=iter(num)
+for i in range(len(num)):
+    print("element at index",i,"is:",next(it))
+
+n=int(input("enter the weight :"))
+if n==0:
+    print("time estimated: 0 minutes")
+elif n in range(1,2001):
+    print("time estimated: 25 minutes")
+elif n in range(2001,4001):
+    print("time estimated: 35 minutes")
+elif n in range(4001,7001):
+    print("time estimated: 45 minutes")
+else:
+    print("overloaded")
+
+
+val=int(input("enter the number:"))
+x=0
+y=0
+for i in range(1,val+1):
+    if(i%2!=0):
+        x=x+7
+        print("the {} term is : {}".format(val,x-7))
+    else:
+        y=y+6
+        print("the {} term is : {}".format(val,y-6))
